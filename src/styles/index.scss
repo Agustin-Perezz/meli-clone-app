@@ -1,0 +1,80 @@
+
+// Base
+@import './base/base';
+
+// Pages
+@import './pages/ProductPage';
+
+// Components
+@import './components/navbar/NavBar';
+
+// <----------- PRODUCTS STYLES ------------>
+
+@import 
+  './components/products/items/Item',
+  './components/products/items/ListItems',
+  './components/products/items/ViewOptionsProducts',
+  './components/products/items/NotFoundProduct';
+
+@import './components/products/Products';
+
+@import './components/products/ui/LoadingComponent',
+        './components/products/ui/Presentation';
+
+@import './components/products/filters/filters-mobile/NavBarFiltersMobile';
+
+@import './components/products/filters/list-filters-active/ListFiltersActiveMobile',
+        './components/products/filters/list-filters-active/_ListFiltersActiveDesktop';
+
+@import
+  './components/products/filters/filters-mobile/filter-modal/FilterMobile',
+  './components/products/filters/filters-mobile/filter-modal/FilterModal',
+  './components/products/filters/filters-mobile/sort-modal/SortModal';
+
+@import 
+  './components/products/filters/filters-desktop/ListFiltersDesktop',
+  './components/products/filters/filters-desktop/FilterDesktop';
+  
+@import './components/products/categories/ListCategories';
+
+// <---------- PRODUCTS STYLES -------------->
+
+
+// <----------- PRODUCT STYLES ----------->
+
+@import './components/product/Product',
+        './components/product/ProductDesktop';
+
+@import './components/product/boundle-images/BoundleImagesMobile',
+        './components/product/boundle-images/BoundleImagesDesktop';
+
+@import './components/product/general-information/GeneralInformation',
+        './components/product/general-information/ButtonsInformation';
+
+@import './components/product/header/Header',
+        './components/product/header/Stars';
+
+@import './components/product/trader/Trader';
+
+@import './components/product/description/Description';
+
+@import './components/product/attributes/Attributes',
+        './components/product/attributes/GroupAttributes';
+
+@import './components/product/modal-dropdown/ModalDropdown',
+        './components/product/modal-dropdown/BlockDropdown';
+
+@import './components/product/payment-methods/PaymentsMethods',
+        './components/product/payment-methods/PaymentsWarranty';
+
+@import './components/product/questions-and-answer/QuestionsAndAnswer',
+        './components/product/questions-and-answer/Question';
+
+@import './components/product/reviews/Reviews',
+        './components/product/reviews/stars/GroupReviews',
+        './components/product/reviews/stars/GroupStarsPorcentage',
+        './components/product/reviews/opinions/ListOpinions',
+        './components/product/reviews/opinions/Opinion',
+        './components/product/reviews/opinions/NavButtons';
+
+// <----------- PRODUCT STYLES ----------->

@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('../../assets/fonts/ProximaNova-Regular.otf') format('woff2'),
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('../../assets/fonts/Proxima-Nova-Alt-Light.otf') format('woff2'),
+}
+@font-face {
+  font-family: 'Proxima Nova Variant', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('../../assets/fonts/Proxima-Nova-Reg-It.otf') format('woff2'),
+}
+
+html { 
+  background-color: #EDEDED;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Proxima Nova';
+
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  li {
+    list-style: none;
+    list-style-type: none;
+  }
+
+  button {
+    border: none;
+    background: none;
+    outline: none;
+  }
+  
+  ul {
+    list-style-type: none;
+    list-style: none;
+  }
+  
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+  }
+
+}
+
+// Variables
+$primary: #fff159;
+$white: #ffffff;
+$white_two: #b8b8b8;
+$white_three: #fafafa;
+$grey: #999;
+$black: #000000;
+$black_dark: rgba(0, 0, 0, 0.9);;
+$background: #EDEDED;
+$black_one: #363636;
+$black_two: #4d4b3c;
+$black_three: #666666;
+$black_four: #736C28;
+$black_five: #333333;
+$color_count: #b9b4b5;
+$green: #00a650;
+$grey: #0000008c;
+$green_background: #e6f7ee;
+$blue: #6c8cf7;
+$sort_color: #3483fa;
+$sort_hover: #F5F5F5;
+$sort_hover_border: #9cc4db;
+
+$breakpoints: (
+  sm: 540px,
+  md: 768px,
+  mdl: 875px,
+  lg: 1180px,
+);
+
+// Mixin
+@mixin media-up( $breakpoint ) {
+  @media screen and ( min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin flex-box( $justify: center, $align: center, $wrap: nowrap ) {
+  display: flex; 
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+@mixin settings-img( $width, $height ) {
+  width: $width;
+  min-width: $width;
+  height: $height;
+}
+
+// Basic Class
+.btn {
+  display: inline-block;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in 0s;
+}
